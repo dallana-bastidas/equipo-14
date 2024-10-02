@@ -9,7 +9,7 @@ exports.crearUsuario = async (req, res) => {
 		res.send(usuarioData);
 	} catch (error) {
 		console.log(error);
-		res.status(500).send("hubo un proble con tu registro");
+		res.status(500).send("hubo un problema con tu registro");
 	}
 };
 
@@ -19,7 +19,7 @@ exports.obtenerUsuarios = async (req, res) => {
 		res.json(usuarioData);
 	} catch (error) {
 		console.log(error);
-		res.status(404).send("no se encontro ningun usuario");
+		res.status(404).send("no se encontró ningún usuario");
 	}
 };
 
@@ -31,10 +31,10 @@ exports.obtenerUsuario = async (req, res) => {
 		} else {
 			return res.status(202).send(usuarioData);
 		}
-		
+
 	} catch (error) {
 		console.log(error);
-		res.status(404).send("no se encontro ningun usuario");
+		res.status(404).send("no se encontró ningún usuario");
 	}
 };
 
@@ -42,13 +42,13 @@ exports.eliminarUsuario = async (req, res) => {
 	try {
 		const usuarioData = await usuarioModel.findById(req.params.id);
 		if (!usuarioData) {
-			return res.status(404).send("no se encontoro el usuario");
+			return res.status(404).send("no se encontró el usuario");
 		} else {
 			await usuarioModel.findByIdAndDelete(req.params.id);
 			res.status(202).send({ msg: "usuario eliminado correctamente" });
 		}
 	} catch (error) {
 		console.log(error);
-		res.status(404).send("no se encontro ningun usuario");
+		res.status(404).send("no se encontró ningún usuario");
 	}
 };

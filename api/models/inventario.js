@@ -16,6 +16,11 @@ const inventrioSchema = mongoose.Schema(
 			required: true,
 		},
 
+		talla: {
+			type: String,
+			require: true,
+		},
+
 		proveedor: {
 			type: String,
 			required: true,
