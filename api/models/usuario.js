@@ -6,9 +6,9 @@ const UsuarioSchema = mongoose.Schema(
 			required: true,
 		},
 
-		apellidos:{
-			type:String,
-			required:true,
+		apellidos: {
+			type: String,
+			required: true,
 		},
 		clave: {
 			type: String,
@@ -17,10 +17,6 @@ const UsuarioSchema = mongoose.Schema(
 		correoElectronico: {
 			type: String,
 			required: true,
-		},
-		fechaNacimiento: {
-			type: Date,
-			required: false,
 		},
 	},
 	{
