@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-product',
-  standalone: true,
-  imports: [],
   templateUrl: './add-product.component.html',
-  styleUrl: './add-product.component.css'
+  styleUrls: ['./add-product.component.css']
 })
-export class AddProductComponent {
+export class AñadirProductoComponent {
+  constructor(private router: Router) {}
 
+  onAvatarClick() {
+    this.router.navigate(['/otra-pagina']);
+  }
 }
