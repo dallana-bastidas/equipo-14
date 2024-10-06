@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-product',
+  standalone: true,
   templateUrl: './add-product.component.html',
   styleUrls: ['./add-product.component.css']
 })

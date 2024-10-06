@@ -1,9 +1,6 @@
-import { Provider } from "@angular/core";
-//Servicios para inyectar
+import { ApplicationConfig } from "@angular/core";
 
-export const config = {
+export const config: ApplicationConfig = {
     production: false,
-    apiBaseUrl: 'http://http://localhost:4200/',
-
     providers: []
 };
