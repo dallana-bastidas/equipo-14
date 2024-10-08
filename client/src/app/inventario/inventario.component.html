@@ -1,0 +1,186 @@
+<div class="pepe p-6 bg-white rounded-lg shadow-md">
+  <!-- Estadísticas -->
+  <div class="grid grid-cols-4 gap-4 mb-6">
+    <div class="text-center border border-gray-300 rounded-lg p-4">
+      <p class="text-2xl font-bold">20</p>
+      <p class="text-gray-600">Productos en total</p>
+    </div>
+    <div class="text-center border border-gray-300 rounded-lg p-4">
+      <p class="text-2xl font-bold">5</p>
+      <p class="text-gray-600">Productos disponibles</p>
+    </div>
+    <div class="text-center border border-gray-300 rounded-lg p-4">
+      <p class="text-2xl font-bold">166</p>
+      <p class="text-gray-600">Cantidad total en stock</p>
+    </div>
+    <div class="text-center border border-gray-300 rounded-lg p-4">
+      <p class="text-2xl font-bold">2</p>
+      <p class="text-gray-600">Total de proveedores</p>
+    </div>
+  </div>
+
+
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-lg font-semibold">Todos los productos</span>
+    <div class="flex items-center">
+      <input type="text" placeholder="Buscar producto..." class="border px-4 py-2 rounded-lg w-1/2" />
+      <button class="bg-white-200 b border border-gray-300 px-4 py-2 rounded-lg
+      ml-2 hover:bg-black hover:text-white transition-200 ">Filtros</button>
+    </div>
+  </div>
+
+  <!-- Tabla de productos -->
+  <div class="overflow-x-auto">
+    <table class="min-w-full bg-white border">
+      <thead class="bg-gray-100">
+        <tr>
+
+          <th class="px-4 py-2 border">Id</th>
+          <th class="px-4 py-2 border">Nombre</th>
+          <th class="px-4 py-2 border">Precio</th>
+          <th class="px-4 py-2 border">Cantidad</th>
+          <th class="px-4 py-2 border">Talla</th>
+          <th class="px-4 py-2 border">Proveedor</th>
+          <th class="px-4 py-2 border">Catálogo</th>
+          <th class="px-4 py-2 border">Disponibilidad</th>
+          <th class="px-4 py-2 border">Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <td class="border px-4 py-2">
+            <input type="checkbox" class="form-checkbox h-4 w-4 text-blue-600">
+          </td>
+          <td class="border px-4 py-2">001</td>
+          <td class="border px-4 py-2">Pantalón</td>
+          <td class="border px-4 py-2">$20</td>
+          <td class="border px-4 py-2">3 unidades</td>
+          <td class="border px-4 py-2">XL</td>
+          <td class="border px-4 py-2">Proveedor 1</td>
+          <td class="border px-4 py-2">Catálogo 1</td>
+          <td class="border px-4 py-2">
+            <span class="text-black bg-green-200 rounded-full px-2 py-1">Disponible</span>
+          </td>
+          <td class="border px-4 py-2">
+            <button class="text-blue-600 hover:underline">Editar</button>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td class="border px-4 py-2">
+            <input type="checkbox" class="form-checkbox h-4 w-4 text-blue-600">
+          </td>
+          <td class="border px-4 py-2">001</td>
+          <td class="border px-4 py-2">Pantalón</td>
+          <td class="border px-4 py-2">$20</td>
+          <td class="border px-4 py-2">3 unidades</td>
+          <td class="border px-4 py-2">XL</td>
+          <td class="border px-4 py-2">Proveedor 1</td>
+          <td class="border px-4 py-2">Catálogo 1</td>
+          <td class="border px-4 py-2">
+            <span class="text-black bg-green-200 rounded-full px-2 py-1">Disponible</span>
+          </td>
+          <td class="border px-4 py-2">
+            <button class="text-blue-600 hover:underline">Editar</button>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td class="border px-4 py-2">
+            <input type="checkbox" class="form-checkbox h-4 w-4 text-blue-600">
+          </td>
+          <td class="border px-4 py-2">001</td>
+          <td class="border px-4 py-2">Pantalón</td>
+          <td class="border px-4 py-2">$20</td>
+          <td class="border px-4 py-2">3 unidades</td>
+          <td class="border px-4 py-2">XL</td>
+          <td class="border px-4 py-2">Proveedor 1</td>
+          <td class="border px-4 py-2">Catálogo 1</td>
+          <td class="border px-4 py-2">
+            <span class="text-black bg-green-200 rounded-full px-2 py-1">Disponible</span>
+          </td>
+          <td class="border px-4 py-2">
+            <button class="text-blue-600 hover:underline">Editar</button>
+          </td>
+        </tr>
+
+
+
+        <tr>
+          <td class="border px-4 py-2">
+            <input type="checkbox" class="form-checkbox h-4 w-4 text-blue-600">
+          </td>
+          <td class="border px-4 py-2">002</td>
+          <td class="border px-4 py-2">Camisa</td>
+          <td class="border px-4 py-2">$20</td>
+          <td class="border px-4 py-2">100 unidades</td>
+          <td class="border px-4 py-2">L</td>
+          <td class="border px-4 py-2">Bondeadas nortex</td>
+          <td class="border px-4 py-2">Catálogo 2</td>
+          <td class="border px-4 py-2">
+            <span class="text-black bg-red-200 rounded-full px-2 py-1">No disponible</span>
+          </td>
+          <td class="border px-4 py-2">
+            <button class="text-blue-600 hover:underline">Editar</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="border px-4 py-2">
+            <input type="checkbox" class="form-checkbox h-4 w-4 text-blue-600">
+          </td>
+          <td class="border px-4 py-2">002</td>
+          <td class="border px-4 py-2">Camisa</td>
+          <td class="border px-4 py-2">$20</td>
+          <td class="border px-4 py-2">100 unidades</td>
+          <td class="border px-4 py-2">L</td>
+          <td class="border px-4 py-2">Bondeadas nortex</td>
+          <td class="border px-4 py-2">Catálogo 2</td>
+          <td class="border px-4 py-2">
+            <span class="text-black bg-red-200 rounded-full px-2 py-1">No disponible</span>
+          </td>
+          <td class="border px-4 py-2">
+            <button class="text-blue-600 hover:underline">Editar</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="border px-4 py-2">
+            <input type="checkbox" class="form-checkbox h-4 w-4 text-blue-600">
+          </td>
+          <td class="border px-4 py-2">001</td>
+          <td class="border px-4 py-2">Pantalón</td>
+          <td class="border px-4 py-2">$20</td>
+          <td class="border px-4 py-2">3 unidades</td>
+          <td class="border px-4 py-2">XL</td>
+          <td class="border px-4 py-2">Proveedor 1</td>
+          <td class="border px-4 py-2">Catálogo 1</td>
+          <td class="border px-4 py-2">
+            <span class="text-black bg-green-200 rounded-full px-2 py-1">Disponible</span>
+          </td>
+          <td class="border px-4 py-2">
+            <button class="text-blue-600 hover:underline">Editar</button>
+          </td>
+        </tr>
+
+
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Paginación -->
+  <div class="flex justify-end items-center mt-4">
+    <button class="px-4 py-2 bg-gray-100 rounded"> Anterior</button>
+
+    <div class="flex items-center mx-4">
+      <button class="px-2 py-1 bg-gray-100 text-black rounded mx-1">1</button>
+      <span class="mx-1">de</span>
+      <button class="px-2 py-1 bg-gray-100 text-black rounded mx-1">100</button>
+    </div>
+
+    <button class="px-4 py-2 bg-gray-100 rounded">Siguiente</button>
+  </div>
+</div>
