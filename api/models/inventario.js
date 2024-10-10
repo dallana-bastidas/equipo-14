@@ -1,6 +1,11 @@
 const mongoose = require("mongoose");
 const inventrioSchema = mongoose.Schema(
 	{
+		id: {
+			type: Number,
+			require: true,
+		},
+
 		producto: {
 			type: String,
 			require: true,
@@ -12,7 +17,7 @@ const inventrioSchema = mongoose.Schema(
 		},
 
 		cantidad: {
-			type: String,
+			type: Number,
 			required: true,
 		},
 
@@ -26,7 +31,12 @@ const inventrioSchema = mongoose.Schema(
 			required: true,
 		},
 
-		imagen: {
+		catalogo: {
+			type: String,
+			require: true,
+		},
+
+		disponibilidad: {
 			type: String,
 			required: true,
 		},

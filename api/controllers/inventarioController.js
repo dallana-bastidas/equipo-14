@@ -1,10 +1,28 @@
 const inventarioModel = require("../models/inventario");
 
 exports.crearInventario = async (req, res) => {
-	console.log(req.body);
 	try {
+		const {
+			id,
+			producto,
+			precio,
+			cantidad,
+			talla,
+			proveedor,
+			catalogo,
+			disponibilidad,
+		} = req.body;
 		let inventarioData;
-		inventarioData = new inventarioModel(req.body);
+		inventarioData = new inventarioModel({
+			id,
+			producto,
+			precio,
+			cantidad,
+			talla,
+			proveedor,
+			catalogo,
+			disponibilidad,
+		});
 		await inventarioData.save();
 		res.send(inventarioData);
 	} catch (error) {
@@ -25,24 +43,34 @@ exports.traerInventario = async (req, res) => {
 
 exports.modificarInventario = async (req, res) => {
 	try {
-		const { imagen, producto, cantidad, precio, proveedor } = req.body;
-		let inventarioData = await inventarioModel.findById(req.params.id);
+		const idInventario = req.params.id;
+
+		const {
+			id,
+			producto,
+			precio,
+			cantidad,
+			talla,
+			proveedor,
+			catalogo,
+			disponibilidad,
+		} = req.body;
+		let inventarioData = await inventarioModel.find({ id: idInventario });
 
 		if (!inventarioData) {
 			res.status(500).send({ msg: "no se encontró el producto" });
 		} else {
-			inventarioData.imagen = imagen;
+			inventarioData.id = id;
 			inventarioData.producto = producto;
-			inventarioData.cantidad = cantidad;
 			inventarioData.precio = precio;
+			inventarioData.cantidad = cantidad;
+			inventarioData.talla = talla;
 			inventarioData.proveedor = proveedor;
+			inventarioData.catalogo = catalogo;
+			inventarioData.disponibilidad = disponibilidad;
 
-			await inventarioModel.findByIdAndUpdate(
-				req.params,
-				id,
-				inventarioData
-			);
-			res.status(202).send("se actualizo la información");
+			const modificado = await inventarioModel.findOneAndUpdate({id: req.params.id}, inventarioData,{new:true})
+			res.status(200).send(modificado);
 		}
 	} catch (error) {
 		console.log(error);
@@ -50,17 +78,29 @@ exports.modificarInventario = async (req, res) => {
 	}
 };
 
+
 exports.eliminarInventario = async (req, res) => {
 	try {
-		let inventarioData = await inventarioModel.findById(req.params.id);
+		let inventarioData = await inventarioModel.find({id: req.params.id});
 		if (!inventarioData) {
 			res.status(404).send({ msg: "no se encontró" });
 		} else {
-			await inventarioModel.findByIdAndDelete(req.params.id);
-			res.status(202).send("se elimino el item");
+			await inventarioModel.findOneAndDelete({id: req.params.id});
+			res.status(200).send("se elimino el item");
 		}
 	} catch (error) {
 		console.log(error);
 		res.status(500).send("hubo un problema");
 	}
 };
+
+
+
+// "id":,
+// "producto":,
+// "precio":,
+// "cantidad":,
+// "talla":,
+// "proveedor":,
+// "catalogo":,
+// "disponibilidad":,
