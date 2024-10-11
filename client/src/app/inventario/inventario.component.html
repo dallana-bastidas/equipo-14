@@ -49,81 +49,29 @@
       </thead>
       <tbody>
 
+        @for (inventario of inventarios; track inventario.id ) {
         <tr>
-          <td class="border px-4 py-2">
-            <input type="checkbox" class="form-checkbox h-4 w-4 text-blue-600">
-          </td>
-          <td class="border px-4 py-2">001</td>
-          <td class="border px-4 py-2">Pantalón</td>
-          <td class="border px-4 py-2">$20</td>
-          <td class="border px-4 py-2">3 unidades</td>
-          <td class="border px-4 py-2">XL</td>
-          <td class="border px-4 py-2">Proveedor 1</td>
-          <td class="border px-4 py-2">Catálogo 1</td>
-          <td class="border px-4 py-2">
-            <span class="text-black bg-green-200 rounded-full px-2 py-1 text-sm">Disponible</span>
-          </td>
-          <td class="border px-4 py-2">
-            <button class="text-blue-600 hover:underline">Editar</button>
-          </td>
+        <td class="border px-4 py-2">
+          <input type="checkbox" class="form-checkbox h-4 w-4 text-blue-600">
+        </td>
+        <td class="border px-4 py-2"> {{inventario.id}}</td>
+        <td class="border px-4 py-2">{{inventario.producto}}</td>
+        <td class="border px-4 py-2">{{inventario.precio}}</td>
+        <td class="border px-4 py-2">{{inventario.cantidad}}</td>
+        <td class="border px-4 py-2">{{inventario.talla}}</td>
+        <td class="border px-4 py-2">{{inventario.proveedor}}</td>
+        <td class="border px-4 py-2">{{inventario.catalogo}}</td>
+        <td class="border px-4 py-2">
+          <span  [ngClass]="inventario.disponibilidad == 'disponible'
+          ?'bg-green-200': 'bg-red-200'"  class="text-black rounded-full px-2 py-1
+          text-sm">{{inventario.disponibilidad}}</span>
+        </td>
+        <td class="border px-4 py-2">
+          <button class="text-blue-600 hover:underline" (click)="modificarInventario(inventario.id)">Editar</button>
+          <button class="text-blue-600 hover:underline" (click)="eliminarInventario(inventario.id)">Eliminar</button>
+        </td>
         </tr>
-
-        <tr>
-          <td class="border px-4 py-2">
-            <input type="checkbox" class="form-checkbox h-4 w-4 text-blue-600">
-          </td>
-          <td class="border px-4 py-2">001</td>
-          <td class="border px-4 py-2">Pantalón</td>
-          <td class="border px-4 py-2">$20</td>
-          <td class="border px-4 py-2">3 unidades</td>
-          <td class="border px-4 py-2">XL</td>
-          <td class="border px-4 py-2">Proveedor 1</td>
-          <td class="border px-4 py-2">Catálogo 1</td>
-          <td class="border px-4 py-2">
-            <span class="text-black bg-green-200 rounded-full px-2 py-1 text-sm">Disponible</span>
-          </td>
-          <td class="border px-4 py-2">
-            <button class="text-blue-600 hover:underline">Editar</button>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="border px-4 py-2">
-            <input type="checkbox" class="form-checkbox h-4 w-4 text-blue-600">
-          </td>
-          <td class="border px-4 py-2">001</td>
-          <td class="border px-4 py-2">Pantalón</td>
-          <td class="border px-4 py-2">$20</td>
-          <td class="border px-4 py-2">3 unidades</td>
-          <td class="border px-4 py-2">XL</td>
-          <td class="border px-4 py-2">Proveedor 1</td>
-          <td class="border px-4 py-2">Catálogo 1</td>
-          <td class="border px-4 py-2">
-            <span class="text-black bg-green-200 rounded-full px-2 py-1 text-sm">Disponible</span>
-          </td>
-          <td class="border px-4 py-2">
-            <button class="text-blue-600 hover:underline">Editar</button>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="border px-4 py-2">
-            <input type="checkbox" class="form-checkbox h-4 w-4 text-blue-600">
-          </td>
-          <td class="border px-4 py-2">002</td>
-          <td class="border px-4 py-2">Camisa</td>
-          <td class="border px-4 py-2">$25</td>
-          <td class="border px-4 py-2">100 unidades</td>
-          <td class="border px-4 py-2">L</td>
-          <td class="border px-4 py-2">Proveedor 2</td>
-          <td class="border px-4 py-2">Catálogo 2</td>
-          <td class="border px-4 py-2">
-            <span class="text-black bg-red-200 rounded-full px-2 py-1 text-sm">No disponible</span>
-          </td>
-          <td class="border px-4 py-2">
-            <button class="text-blue-600 hover:underline">Editar</button>
-          </td>
-        </tr>
+        }
       </tbody>
     </table>
   </div>
