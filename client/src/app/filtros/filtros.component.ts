@@ -11,6 +11,8 @@ import { CommonModule } from '@angular/common'; // Importa el CommonModule
 export class FiltrosComponent {
   showFilters: boolean = true; // Propiedad para controlar la visibilidad
   disponibilidad: string = ''; // Propiedad para controlar la opción seleccionada ('disponible' o 'noDisponible')
+  veranoSeleccionado: boolean = false; // Propiedad para controlar la opción de 'Verano'
+  inviernoSeleccionado: boolean = false; // Propiedad para controlar la opción de 'Invierno'
 
   // Método para alternar la visibilidad del componente de filtros
   toggleFilters() {
@@ -34,5 +36,15 @@ export class FiltrosComponent {
   // Método para verificar si la opción está seleccionada
   isSelected(opcion: string): boolean {
     return this.disponibilidad === opcion;
+  }
+
+  // Método para alternar la selección de 'Verano'
+  toggleVerano() {
+    this.veranoSeleccionado = !this.veranoSeleccionado;
+  }
+
+  // Método para alternar la selección de 'Invierno'
+  toggleInvierno() {
+    this.inviernoSeleccionado = !this.inviernoSeleccionado;
   }
 }
