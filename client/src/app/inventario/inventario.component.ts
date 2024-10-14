@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { FiltrosComponent } from '../filtros/filtros.component'; 
-import { NavbarComponent } from "../navbar/navbar.component";
 import { InventarioService } from '../services/inventario.service';
 import { NgClass } from '@angular/common';
 import { SidebarComponent } from '../sidebar/sidebar.component';
@@ -10,7 +9,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-inventario',
   standalone: true,
-  imports: [CommonModule, FiltrosComponent,SidebarComponent, NavbarComponent, NgClass],
+  imports: [CommonModule, FiltrosComponent,SidebarComponent, NgClass],
   templateUrl: './inventario.component.html',
   styleUrls: ['./inventario.component.css'],
 })
