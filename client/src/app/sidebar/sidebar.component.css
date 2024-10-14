@@ -1,5 +1,4 @@
 /* sidebar.component.css */
-:host {
-    font-family: 'Open Sans', sans-serif;
-  }
-  
+body{
+  font-family: 'Urbanist', sans-serif;
+}

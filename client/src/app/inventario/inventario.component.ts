@@ -1,22 +1,28 @@
 import { Component } from '@angular/core';
+import { FiltrosComponent } from '../filtros/filtros.component'; 
 import { NavbarComponent } from "../navbar/navbar.component";
 import { InventarioService } from '../services/inventario.service';
 import { NgClass } from '@angular/common';
 import { SidebarComponent } from '../sidebar/sidebar.component';
+import { CommonModule } from '@angular/common'; 
+
 
 @Component({
   selector: 'app-inventario',
   standalone: true,
-  imports: [SidebarComponent, NavbarComponent,NgClass],
+  imports: [CommonModule, FiltrosComponent,SidebarComponent, NavbarComponent, NgClass],
   templateUrl: './inventario.component.html',
-  styleUrl: './inventario.component.css',
+  styleUrls: ['./inventario.component.css'],
 })
 export class InventarioComponent {
   inventarios: any[] = [];
+  showFilters: boolean = false;
+
   constructor(private api: InventarioService) {}
 
-  ngOnInit (){
-    this.mostrarInventario()
+  ngOnInit() {
+    this.mostrarInventario();
+    console.log('Initial showFilters:', this.showFilters);
   }
 
   mostrarInventario() {
@@ -25,13 +31,16 @@ export class InventarioComponent {
     });
   }
 
-  modificarInventario(id:string){
-
+  modificarInventario(id: string) {
+    // Lógica para modificar el inventario
   }
 
-  eliminarInventario(id:string){
-    
+  eliminarInventario(id: string) {
+    // Lógica para eliminar el inventario
   }
 
-
+  toggleFilters() {
+    console.log("toggleFilters clicked");
+    this.showFilters = !this.showFilters; 
+  }
 }
