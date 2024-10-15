@@ -1,13 +1,21 @@
 import { Routes } from '@angular/router';
 import { FiltrosComponent } from './filtros/filtros.component';
-import { InformacionGeneralComponent } from './informacion-general/informacion-general.component';
 import { InventarioComponent } from './inventario/inventario.component';
-import { NavbarProductoComponent } from './navbar-producto/navbar-producto.component';
+import { LoginComponent } from './login/login.component';
+import { AddProductComponent } from './add-product/add-product.component';
+import { ConfirmarEliminarComponent } from './confirmar-eliminar/confirmar-eliminar.component';
+import { HeaderComponent } from './header/header.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 export const routes: Routes = [
-  { path: 'inventario', component: InventarioComponent },
+  { path: 'add-product', component: AddProductComponent },
+  { path: 'confirmar-eliminar', component: ConfirmarEliminarComponent},
   { path: 'filtros', component: FiltrosComponent },
-  { path: 'producto', component: NavbarProductoComponent },
-  { path: 'nuevo', component: InformacionGeneralComponent },
+  { path: 'header', component: HeaderComponent},
+  { path: 'inventario', component: InventarioComponent },
+  { path: 'landing-page', component: LandingPageComponent},
+  { path: 'login', component: LoginComponent},
+  { path: 'sidebar', component: SidebarComponent}
 ];

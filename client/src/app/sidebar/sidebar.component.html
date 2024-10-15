@@ -1,4 +1,4 @@
-<div class="min-h-screen h-full fixed w-[280px] h-[900px] bg-[#E0E9ED] shadow-lg overflow-y-auto">
+<div class="fixed min-h-screen h-full  w-[280px] h-[900px] bg-[#E0E9ED] shadow-lg overflow-y-auto">
   <!-- Encabezado de la barra lateral -->
   <div class="p-5 flex justify-center h-20">
     <a routerLink="/home">
@@ -30,7 +30,7 @@
           />
         </svg>
       </div>
-      <span class="flex-grow hover:font-semibold">Mi inventario</span>
+      <span class="flex-grow hover:font-semibold">Inventario</span>
       <div
         class="transition-transform duration-300"
         [ngClass]="{ 'rotate-180': inventoryOpen }"
@@ -70,7 +70,7 @@
           <div
             class="py-2 px-4 w-[224px] h-[36px] cursor-pointer hover:bg-[#FEFEFF] hover:shadow-md hover:font-semibold rounded"
           >
-            Ver inventario
+            Mi inventario
           </div>
         </a>
         <a routerLink="/anadir-producto">
