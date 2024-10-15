@@ -4,12 +4,13 @@ import { InventarioService } from '../services/inventario.service';
 import { NgClass } from '@angular/common';
 import { SidebarComponent } from '../sidebar/sidebar.component';
 import { CommonModule } from '@angular/common'; 
+import { HeaderComponent } from '../header/header.component';
 
 
 @Component({
   selector: 'app-inventario',
   standalone: true,
-  imports: [CommonModule, FiltrosComponent,SidebarComponent, NgClass],
+  imports: [CommonModule, FiltrosComponent,SidebarComponent,HeaderComponent, NgClass],
   templateUrl: './inventario.component.html',
   styleUrls: ['./inventario.component.css'],
 })
