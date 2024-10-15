@@ -22,7 +22,6 @@ export class InventarioComponent {
 
   ngOnInit() {
     this.mostrarInventario();
-    console.log('Initial showFilters:', this.showFilters);
   }
 
   mostrarInventario() {
@@ -40,7 +39,6 @@ export class InventarioComponent {
   }
 
   toggleFilters() {
-    console.log("toggleFilters clicked");
     this.showFilters = !this.showFilters; 
   }
 }

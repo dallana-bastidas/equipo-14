@@ -28,3 +28,5 @@ export class InventarioService {
     return this.http.delete(`${this.apiURL}/eliminar-item/${id}`);
   }
 }
+
+
