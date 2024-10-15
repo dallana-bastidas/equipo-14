@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { FiltrosComponent } from './filtros/filtros.component';
 import { InventarioComponent } from './inventario/inventario.component';
 import { LoginComponent } from './login/login.component';
@@ -7,6 +7,7 @@ import { ConfirmarEliminarComponent } from './confirmar-eliminar/confirmar-elimi
 import { HeaderComponent } from './header/header.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { NgModule } from '@angular/core';
 
 
 export const routes: Routes = [
@@ -17,5 +18,14 @@ export const routes: Routes = [
   { path: 'inventario', component: InventarioComponent },
   { path: 'landing-page', component: LandingPageComponent},
   { path: 'login', component: LoginComponent},
-  { path: 'sidebar', component: SidebarComponent}
+  { path: 'sidebar', component: SidebarComponent},
+  { path: '', redirectTo: '/landing-page', pathMatch: 'full'},
+  
 ];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports:[RouterModule]
+})
+
+export class AppRoutingModule{}
