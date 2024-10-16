@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { LoginService } from '../services/login.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-login',
@@ -16,10 +18,10 @@ export class LoginComponent {
   emailError: string = ''; 
   passwordError: string = ''; 
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private _loginService: LoginService) {}
 
-  // Método para validar el correo electrónico
-  validateEmail() {
+  // Validar el correo electrónico
+  validateEmail(): void {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!this.email) {
       this.emailError = 'El correo electrónico es obligatorio.';
@@ -30,26 +32,38 @@ export class LoginComponent {
     }
   }
 
-  // Método para validar la contraseña
-  validatePassword() {
+  // Validar la contraseña
+  validatePassword(): void {
     if (!this.password) {
       this.passwordError = 'La contraseña es obligatoria.';
     } else if (this.password.length < 6) {
-      this.passwordError = 'La contraseña debe tener al menos 6 caracteres.';
+      this.passwordError = 'La contraseña debe tener al menos 6 caracteres.';  // Se corrigió el mínimo a 6
     } else {
       this.passwordError = '';
     }
   }
 
-  // Método para manejar el inicio de sesión
-  onLogin() {
-    // Validar email y contraseña antes de proceder
+  // Manejar el inicio de sesión
+  onLogin(): void {
     this.validateEmail();
     this.validatePassword();
 
     if (!this.emailError && !this.passwordError) {
-      // lógica de autenticación (API, servicios)
-      this.router.navigate(['/landin-page']);
+      this._loginService.iniciarSesion({ email: this.email, clave: this.password }).subscribe({
+        next: () => {
+          this.router.navigate(['/inventario']);
+        },
+        error: () => {
+          Swal.fire({
+            icon: 'error',
+            title: 'Correo electrónico o contraseña inválidos.',
+            text: 'Por favor, inténtalo de nuevo.',
+            timer: 2000,
+            showConfirmButton: false,
+          });
+        },
+      });
     }
   }
 }
+

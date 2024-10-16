@@ -2,10 +2,8 @@
 <div
   class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-[650px] h-auto flex flex-col items-center"
 >
-  <!-- Contenedor para el logo -->
-  <div
-    class="flex flex-col items-center justify-center w-[200px] h-[67.38px] mb-6"
-  >
+  <!-- Contenedor del logo -->
+  <div class="flex flex-col items-center justify-center w-[200px] h-[67.38px] mb-6">
     <img
       src="https://s3-alpha-sig.figma.com/img/b468/47e0/7a4d76d5e5326e185b1fbbece43de662?Expires=1729468800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IIrhnXHVhVZtNc3OzhH6hIIba6jrlU1FKV2pJ1YbplAvA5K3j4tCqdqTS39dCdkTmsRFRLQcEy2zYdyj9XJTkI37EAFD4PE4d1~BYzQHsU24QH8zh-v7e3soHpyLf5WlknL6mJzNeap16LgJ0IRcwq9KFLvgVpLeALozGG-28TNItMyVQx~8hCK83w37CU8u8axrunzNvzdCMnuC57EjmlSE5iauSCAU4NPXq1hNDFd0AhzsFS8CD8lSEsEZijfKzfj2SBfSBdQWxdPvFOAYi94HuO2Ot-ts6oGRJiyfEenxtEKK9DdPlVrzeU1JLx51X-zLxLXik69zjNrEv6CmgQ__"
       alt="Logo"
@@ -15,13 +13,11 @@
 
   <!-- Contenedor del formulario -->
   <div
-    class="w-full max-w-[534px] p-6 rounded-xl border border-transparent bg-[#FEFEFF] shadow-[0px_4px_6px_-1px_rgba(0,0,0,0.1),0px_2px_4px_-2px_rgba(0,0,0,0.1),0px_-2px_4px_-1px_rgba(0,0,0,0.1)] mb-4"
+    class="w-full max-w-[534px] p-6 rounded-xl border bg-[#FEFEFF] shadow-md mb-4"
   >
     <!-- Campo de formulario: Correo electrónico o documento -->
     <div class="w-full h-[84px] flex flex-col justify-between mb-4">
-      <label for="email" class="text-sm font-semibold"
-        >Correo electrónico o documento</label
-      >
+      <label for="email" class="text-sm font-semibold">Correo electrónico o documento</label>
       <input
         id="email"
         type="text"
@@ -31,9 +27,7 @@
         class="w-full h-[48px] bg-[#F8F9F8] border border-[#E0E9ED] rounded focus:outline-none px-3"
         (input)="validateEmail()"
       />
-      <span *ngIf="emailError" class="text-red-500 text-sm">
-        {{ emailError }}
-      </span>
+      <span *ngIf="emailError" class="text-red-500 text-sm">{{ emailError }}</span>
     </div>
 
     <!-- Campo de formulario: Contraseña -->
@@ -48,9 +42,7 @@
         class="w-full h-[48px] bg-[#F8F9F8] border border-[#E0E9ED] rounded focus:outline-none px-3"
         (input)="validatePassword()"
       />
-      <span *ngIf="passwordError" class="text-red-500 text-sm">
-        {{ passwordError }}
-      </span>
+      <span *ngIf="passwordError" class="text-red-500 text-sm">{{ passwordError }}</span>
     </div>
 
     <!-- Botón de Ingresar -->
