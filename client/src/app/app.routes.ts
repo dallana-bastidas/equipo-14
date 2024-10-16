@@ -11,21 +11,21 @@ import { NgModule } from '@angular/core';
 
 
 export const routes: Routes = [
-  { path: 'add-product', component: AddProductComponent },
-  { path: 'confirmar-eliminar', component: ConfirmarEliminarComponent},
-  { path: 'filtros', component: FiltrosComponent },
-  { path: 'header', component: HeaderComponent},
-  { path: 'inventario', component: InventarioComponent },
-  { path: 'landing-page', component: LandingPageComponent},
-  { path: 'login', component: LoginComponent},
-  { path: 'sidebar', component: SidebarComponent},
-  { path: '', redirectTo: '/landing-page', pathMatch: 'full'},
-  
+    { path: 'formulario-producto', component: AddProductComponent },
+    { path: 'confirmar-eliminar', component: ConfirmarEliminarComponent },
+    { path: 'filtros', component: FiltrosComponent },
+    { path: 'header', component: HeaderComponent },
+    { path: 'inventario', component: InventarioComponent },
+    { path: 'landing-page', component: LandingPageComponent },
+    { path: 'login', component: LoginComponent },
+    { path: 'sidebar', component: SidebarComponent },
+    { path: '', redirectTo: '/landing-page', pathMatch: 'full' },
+
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports:[RouterModule]
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule]
 })
 
-export class AppRoutingModule{}
+export class AppRoutingModule { }
