@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
@@ -8,13 +8,13 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, RouterModule],
 })
 export class LoginComponent {
-  email: string = '';
-  password: string = '';
-  emailError: string = '';
-  passwordError: string = '';
+  email: string = ''; 
+  password: string = ''; 
+  emailError: string = ''; 
+  passwordError: string = ''; 
 
   constructor(private router: Router) {}
 
@@ -43,12 +43,13 @@ export class LoginComponent {
 
   // Método para manejar el inicio de sesión
   onLogin() {
+    // Validar email y contraseña antes de proceder
     this.validateEmail();
     this.validatePassword();
 
     if (!this.emailError && !this.passwordError) {
-      // Lógica para el inicio de sesión (implementar tu autenticación aquí)
-      this.router.navigate(['/home']); // ruta necesario
+      // lógica de autenticación (API, servicios)
+      this.router.navigate(['/landin-page']);
     }
   }
 }

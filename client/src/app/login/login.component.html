@@ -17,7 +17,7 @@
   <div
     class="w-full max-w-[534px] p-6 rounded-xl border border-transparent bg-[#FEFEFF] shadow-[0px_4px_6px_-1px_rgba(0,0,0,0.1),0px_2px_4px_-2px_rgba(0,0,0,0.1),0px_-2px_4px_-1px_rgba(0,0,0,0.1)] mb-4"
   >
-    <!-- Primer contenedor del campo de formulario (correo electrónico) -->
+    <!-- Campo de formulario: Correo electrónico o documento -->
     <div class="w-full h-[84px] flex flex-col justify-between mb-4">
       <label for="email" class="text-sm font-semibold"
         >Correo electrónico o documento</label
@@ -31,12 +31,12 @@
         class="w-full h-[48px] bg-[#F8F9F8] border border-[#E0E9ED] rounded focus:outline-none px-3"
         (input)="validateEmail()"
       />
-      <span *ngIf="emailError" class="text-red-500 text-sm">{{
-        emailError
-      }}</span>
+      <span *ngIf="emailError" class="text-red-500 text-sm">
+        {{ emailError }}
+      </span>
     </div>
 
-    <!-- Segundo contenedor del campo de formulario (contraseña) -->
+    <!-- Campo de formulario: Contraseña -->
     <div class="w-full h-[84px] flex flex-col justify-between">
       <label for="password" class="text-sm font-semibold">Contraseña</label>
       <input
@@ -48,12 +48,12 @@
         class="w-full h-[48px] bg-[#F8F9F8] border border-[#E0E9ED] rounded focus:outline-none px-3"
         (input)="validatePassword()"
       />
-      <span *ngIf="passwordError" class="text-red-500 text-sm">{{
-        passwordError
-      }}</span>
+      <span *ngIf="passwordError" class="text-red-500 text-sm">
+        {{ passwordError }}
+      </span>
     </div>
 
-    <!-- Tercer contenedor (botón de Ingresar) -->
+    <!-- Botón de Ingresar -->
     <div class="w-full h-[48px] mt-4">
       <button
         class="w-full h-full rounded text-white text-sm font-semibold leading-5 text-center bg-[#34D399] hover:bg-[#28a745] active:bg-[#218838] transition duration-150"
