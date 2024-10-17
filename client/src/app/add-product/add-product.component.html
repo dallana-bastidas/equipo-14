@@ -1,0 +1,112 @@
+<app-header></app-header>
+<app-sidebar class="fixed top-0 left-0 h-full w-[280px]"></app-sidebar>
+<div class="ml-[280px] mx-auto mt-12 p-6 bg-white">
+    <!-- Navbar -->
+    <div class="pepe flex justify-between items-center p-4 mb-4">
+        <div>
+            <h1 class="text-2xl font-bold">Añadir producto</h1>
+            <p class="text-gray-500">Crear producto para añadir a tu inventario.</p>
+        </div>
+    </div>
+    <!-- /Navbar -->
+
+    <form class="grid grid-cols-3 gap-6" [formGroup]="formProducto" (ngSubmit)="guardarProducto()">
+        <div class="col-span-2">
+            <h2 class="text-xl font-semibold mb-4">Información general</h2>
+
+            <div class="mb-4">
+                <label class="block text-sm font-medium text-gray-700">Nombre del producto</label>
+                <input formControlName="producto" type="text" placeholder="Ingresa el nombre del producto" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm p-2 border border-gray-300" />
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-sm font-medium text-gray-700">Descripción</label>
+                <textarea formControlName="descripcion" placeholder="Ingresa la descripción del producto" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm p-2 border border-gray-300"></textarea>
+                <p class="text-xs text-gray-500 mt-1">Esta descripción se mostrará en el catálogo del producto.</p>
+            </div>
+
+            <div class="mb-4 grid grid-cols-1 gap-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Talla</label>
+                    <div class="flex flex-wrap mt-2" formArrayName="inventario">
+                        <div *ngFor="let tallaCtrl of inventario.controls; let i = index" [formGroupName]="i" class="my-2">
+                            <label>
+                                <input type="checkbox" formControlName="checked" />
+                                {{ tallaCtrl.get("talla")!.value }}
+                            </label>
+                            <div class="flex">
+                                Cantidad:
+                                <input type="number" class="ml-2" formControlName="cantidad" min="0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Género</label>
+                    <div class="flex space-x-4 mt-2">
+                        <label>
+                            <input type="radio" value="Varón" name="genero" formControlName="genero" />
+                            Varón
+                        </label>
+                        <label>
+                            <input type="radio" value="Mujer" name="genero" formControlName="genero" />
+                            Mujer
+                        </label>
+                        <label>
+                            <input type="radio" value="Unisex" name="genero" formControlName="genero" />
+                            Unisex
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-xl font-semibold mb-4">Precio y stock</h2>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Precio por proveedor</label>
+                        <input type="number" formControlName="precioProveedor" placeholder="Ingresa el precio por proveedor" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border border-gray-300 p-2" [value]="priceProviderInput" />
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Precio de venta</label>
+                        <input type="number" formControlName="precioPublico" placeholder="Ingresa el precio de venta" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border border-gray-300 p-2" [value]="priceSaleInput" />
+                    </div>
+
+                    <div class="col-span-2">
+                        <label class="block text-sm font-medium text-gray-700">Proveedor</label>
+                        <input type="text" formControlName="proveedor" placeholder="Ingresa el proveedor" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border border-gray-300 p-2" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="text-xl font-semibold mb-4">Subir imagen</h2>
+
+            <div class="border-2 border-dashed border-gray-300 p-6 rounded-lg text-center">
+                <input type="file" class="hidden" id="fileInput" formControlName="file" #inputFile (change)="cambioArchivoInput($event)" />
+                <label for="fileInput" class="cursor-pointer">
+                    <svg class="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 48 48" stroke="currentColor">
+                        <path d="M12 28v-4a8 8 0 018-8h4a8 8 0 018 8v4m4 0v12H8V28m4 0h16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <p class="mt-2 text-sm text-gray-500">Seleccione un archivo o arrástrelo y suéltelo aquí</p>
+                    <p class="mt-2 text-xs text-gray-500">JPG, PNG o PDF, tamaño de archivo no mayor a 10 MB</p>
+                    <button (click)="handleClickInputFile()" type="button" class="mt-2 px-4 py-2 bg-white-600 text-black rounded-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 border border-gray-300">Seleccionar archivo</button>
+                </label>
+            </div>
+
+            <div class="flex space-x-2 mt-4">
+                <div **ngFor="let img of imagenes" class="w-12 h-12 bg-gray-100 border rounded-md">
+                    <img [src]="img" alt="Imagen del producto" class="w-full h-full object-cover rounded-md" />
+                </div>
+            </div>
+        </div>
+
+        <div class="flex items-center space-x-4">
+            <button type="submit" class="flex items-center px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition">Guardar</button>
+        </div>
+    </form>
+</div>
