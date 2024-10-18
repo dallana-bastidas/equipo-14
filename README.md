@@ -17,13 +17,13 @@ Enumera las características principales del proyecto.
 ## Tecnologías utilizadas
 
 ```markdown
-### Frontend
 
+### Frontend
 - Angular ![Angular](https://angular.io/assets/images/logos/angular/angular.svg)
-- Tailwind ![Tailwind](https://tailwindcss.com/img/tailwindcss-logo.svg)
+- Tailwind CSS ![Tailwind](https://tailwindcss.com/img/tailwindcss-logo.svg)
 
 ### Backend
-
+- Node.js ![Node.js](https://nodejs.org/static/images/logo.svg)
 - Express ![Express](https://expressjs.com/images/express-facebook-share.png)
 ```
 
