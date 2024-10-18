@@ -33,10 +33,10 @@ Controla y administra tu inventario de manera eficiente.
 ## Tecnologías Utilizadas
 ### Frontend
 - Angular ![Angular](https://angular.io/assets/images/logos/angular/angular.svg)
-- Tailwind CSS ![Tailwind](https://tailwindcss.com/img/tailwindcss-logo.svg)
+- Tailwind CSS ![Tailwind](https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg)
 
 ### Backend
-- Node.js ![Node.js](https://w1.pngwing.com/pngs/885/534/png-transparent-green-grass-nodejs-javascript-react-mean-angularjs-logo-symbol.png)
+- Node.js ![Node.js](https://nodejs.org/static/images/logo.svg)
 - Express ![Express](https://expressjs.com/images/express-facebook-share.png)
 
 ---
