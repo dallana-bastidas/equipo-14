@@ -36,16 +36,16 @@ Controla y administra tu inventario de manera eficiente.
 - Tailwind CSS ![Tailwind](https://tailwindcss.com/img/tailwindcss-logo.svg)
 
 ### Backend
-- Node.js ![Node.js](https://nodejs.org/static/images/logo.svg)
+- Node.js ![Node.js]([https://nodejs.org/static/images/logo.svg](https://img.icons8.com/?size=100&id=54087&format=png&color=000000))
 - Express ![Express](https://expressjs.com/images/express-facebook-share.png)
 
 ---
 
 ## Nuestro Equipo
-- **Project Manager**: Joel Angel Ocaño Oré
-- **Community Manager**: Rita Cornejo
-- **Diseñadores UX/UI**: Matias Sticca, Silvana Maldonado, Manuel Lo Grasso
-- **Frontend y Backend**: Dallana Bastidas, Juan Diego Hurtado Bastidas
+- **Project Manager**: 📋 Joel Angel Ocaño Oré
+- **Community Manager**: 📲 Rita Cornejo
+- **Diseñadores UX/UI**: 🎨 Matias Sticca, Silvana Maldonado, Manuel Lo Grasso
+- **Backend y Frontend **: 👨🏻‍💻 Dallana Bastidas, Juan Diego Hurtado Bastidas
 - **QA**: ✅ Matias Caceres Paz, Nicolas Demis Martin
 
 ---
