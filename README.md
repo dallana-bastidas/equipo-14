@@ -1,48 +1,54 @@
 # Stock It
 
-Una breve descripción sobre el proyecto y su propósito.
+## Descripción
+**Stock It** 
+Es una plataforma integral de gestión de inventarios diseñada para facilitar a los usuarios la carga y administración de su inventario de productos, con un enfoque especial en la industria de la moda. Los usuarios pueden especificar detalles como tallas, precios de los productos, nombres de los proveedores y precios de los proveedores.
 
-## Gestión de redes sociales
+El inventario se muestra en una lista organizada y se publica en una página de destino (landing page) donde los clientes potenciales pueden explorar el catálogo de productos. Además, la plataforma integra un chat de WhatsApp, permitiendo que los usuarios se comuniquen fácilmente para realizar compras del catálogo.
 
-Detalles sobre cómo el proyecto gestiona las redes sociales.
+---
 
 ## Inventario
+Controla y administra tu inventario de manera eficiente.
 
-Información sobre el manejo de inventarios.
+### Manejo del Inventario
 
-## Características
+1. **Carga y Actualización de Productos**:
+  Los usuarios pueden cargar nuevos productos al inventario y actualizar detalles existentes como tallas, precios y disponibilidad.
 
-Enumera las características principales del proyecto.
+2. **Gestión de Proveedores**:
+  Cada producto puede asociarse a un proveedor, con información sobre el nombre del proveedor y el precio de compra, lo que facilita la gestión de relaciones comerciales.
 
-## Tecnologías utilizadas
+3. **Organización del Inventario**:
+   Los productos se organizan en una lista clara y accesible, permitiendo a los usuarios ver y buscar fácilmente a través del inventario.
+   
+4. **Visualización en el Landing Page**:
+   Una vez que los productos están en el inventario, se publican automáticamente en la página de destino, donde los clientes potenciales pueden ver el catálogo de productos.
+   
+5. **Integración de WhatsApp**:
+    Los clientes pueden contactar fácilmente a través del chat de WhatsApp integrado para realizar preguntas o iniciar compras, mejorando la interacción y las ventas.
 
+---
+
+## Tecnologías Utilizadas
 ### Frontend
-- Angular ![Angular][ [https://angular.io/assets/images/logos/angular/angular.svg](https://private-user-images.githubusercontent.com/117115178/370471067-d19b88d8-8968-4fca-97a3-3598190b75e2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjkyNzY4NDcsIm5iZiI6MTcyOTI3NjU0NywicGF0aCI6Ii8xMTcxMTUxNzgvMzcwNDcxMDY3LWQxOWI4OGQ4LTg5NjgtNGZjYS05N2EzLTM1OTgxOTBiNzVlMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMDE4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTAxOFQxODM1NDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mNGQyOWIyMTI0OWMwZWY2MWVjZTMwZTQ3ODIwYjU2MTU1ZWNiMjM3ZTNlMzE1MmExODgzZjczMzJkZTYzOWUwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.oQTWf3_nw2LtIU9dKaOSOf84BfssXbnl-EAVuUIi7M8)
-  ](https://www.google.com/search?sca_esv=f602dc89620483ed&tbs=simg:CAQS_1wEJ4MPIr13oZbEa8wELELCMpwgaOgo4CAQSFPQuoS-TA5o9xTnlIewi9wmZNdAjGhr-4SDtmdmUnTCY02Hlsfazx77FkBDKtLuy0yAFMAQMCxCOrv4IGgoKCAgBEgT8W11iDAsQne3BCRqTAQobCgh2ZXJ0aWNhbNqliPYDCwoJL2EvNGhoM3AwCh0KCmhvcml6b250YWzapYj2AwsKCS9hLzJtcXZ6YwobCghsYW5ndWFnZdqliPYDCwoJL2ovMnNoX3k0ChwKCWdlb21ldHJpY9qliPYDCwoJL2EvNjIwZDVmChoKCHRyaWFuZ2xl2qWI9gMKCggvbS8wN2p4Nww&sxsrf=ADLYWIIFVwEAEc6716fWzD2sWAo3xzcHIQ:1729277796077&q=angularjs+logo+png&tbm=isch&sa=X&ved=2ahUKEwiB8oLmzZiJAxXiTjABHUPrFboQwg56BAgHEAE)
-- Tailwind CSS ![Tailwind] [https://tailwindcss.com/img/tailwindcss-logo.svg](https://private-user-images.githubusercontent.com/117115178/370471846-bc529739-a248-458d-9b85-163cd4240d25.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjkyNzY4NDcsIm5iZiI6MTcyOTI3NjU0NywicGF0aCI6Ii8xMTcxMTUxNzgvMzcwNDcxODQ2LWJjNTI5NzM5LWEyNDgtNDU4ZC05Yjg1LTE2M2NkNDI0MGQyNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMDE4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTAxOFQxODM1NDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iNzAxM2Q0MGFlYmM4MTc2MTdhOTE5NjY2YzM1NWUyYmQwZDdiYTk5YzY4NjA3NDFmMzVmMjk2Y2Q1NDhiMmJlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.2XfIvzxBoEfUkeW_pWQiqBUyl3EbRFdgJh4FM4O2SoU))
+- Angular ![Angular](https://angular.io/assets/images/logos/angular/angular.svg)
+- Tailwind CSS ![Tailwind](https://tailwindcss.com/img/tailwindcss-logo.svg)
 
 ### Backend
-- Node.js ![Node.js]([[https://nodejs.org/static/images/logo.svg](https://private-user-images.githubusercontent.com/117115178/370472367-08dc6218-08f5-4565-b0d6-f3ebe1191cbe.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjkyNzY4NDcsIm5iZiI6MTcyOTI3NjU0NywicGF0aCI6Ii8xMTcxMTUxNzgvMzcwNDcyMzY3LTA4ZGM2MjE4LTA4ZjUtNDU2NS1iMGQ2LWYzZWJlMTE5MWNiZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMDE4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTAxOFQxODM1NDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jOGRiNTQ1NTYwOWMyOGFlZTc3MTU5MWU4Y2VmNzAxYjA2MWJhZjE4ZGZjNTNjNGVhMzYyNDM2NDAyZmU5ZjFiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.Ou8RQqc-a6zCfrMzC1xcTmzRoGNlRraKUukjs3gQ3lA)](https://nodejs.org/static/logos/nodejsLight.svg))
+- Node.js ![Node.js](https://nodejs.org/static/images/logo.svg)
+- Express ![Express](https://expressjs.com/images/express-facebook-share.png)
+
+---
+
+## Nuestro Equipo
+- **Project Manager**: Joel Angel Ocaño Oré
+- **Community Manager**: Rita Cornejo
+- **Diseñadores UX/UI**: Matias Sticca, Silvana Maldonado, Manuel Lo Grasso
+- **Frontend y Backend**: Dallana Bastidas, Juan Diego Hurtado Bastidas
+- **QA**: ✅ Matias Caceres Paz, Nicolas Demis Martin
+
+---
 
 
-Nuestro Equipo
 
-Project Manager: 📋
-Joel Angel Ocaño Oré 
-
-Community Manager: 📲
-Rita Cornejo
-
-Diseñadores UX/UI: 🎨
-Matias Sticca
-  Silvana Maldonado 
-    Manuel Lo Grasso
-
-Frontend y Backend: 👨🏻‍💻
-Dallana Bastidas 
-  Juan Diego Hurtado Bastidas
-
-
-QA: ✅
-Matias Caceres Paz
-  Nicolas Demis Martin
