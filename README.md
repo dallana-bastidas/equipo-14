@@ -37,8 +37,10 @@ Controla y administra tu inventario de manera eficiente.
 - Tailwind CSS <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS" width="50" height="50">
 
 ### Backend
+### Backend
 - Node.js <img src="https://nodejs.org/static/images/logo.svg" alt="Node.js" width="50" height="50">
-- Express <img src="https://expressjs.com/images/express-facebook-share.png" alt="Express" width="50" height="50">
+- Express <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="Express" width="50" height="50">
+
 
 
 ---
