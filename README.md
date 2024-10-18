@@ -16,16 +16,16 @@ Enumera las características principales del proyecto.
 
 ## Tecnologías utilizadas
 
-Breve explicación sobre las tecnologías utilizadas en el proyecto. Aquí puedes insertar imágenes de las tecnologías. Por ejemplo, para poner una imagen, podrías usar la siguiente sintaxis:
-
-## Tecnologías Utilizadas
+```markdown
 ### Frontend
+
 - Angular ![Angular](https://angular.io/assets/images/logos/angular/angular.svg)
-- Tailwind CSS ![Tailwind](https://tailwindcss.com/img/tailwindcss-logo.svg)
+- Tailwind ![Tailwind](https://tailwindcss.com/img/tailwindcss-logo.svg)
 
 ### Backend
-- Node.js ![Node.js](https://nodejs.org/static/images/logo.svg)
-- Express ![Express](Express](https://expressjs.com/images/express-facebook-share.png)
+
+- Express ![Express](https://expressjs.com/images/express-facebook-share.png)
+```
 
 Nuestro Equipo
 
