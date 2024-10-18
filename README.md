@@ -25,7 +25,7 @@ Breve explicación sobre las tecnologías utilizadas en el proyecto. Aquí puede
 
 ### Backend
 - Node.js ![Node.js](https://nodejs.org/static/images/logo.svg)
-- Express ![Express](
+- Express ![Express](Express](https://expressjs.com/images/express-facebook-share.png)
 
 Nuestro Equipo
 
