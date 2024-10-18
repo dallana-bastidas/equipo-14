@@ -16,7 +16,7 @@ Enumera las características principales del proyecto.
 
 ## Tecnologías utilizadas
 
-```markdown
+
 
 ### Frontend
 - Angular ![Angular](https://angular.io/assets/images/logos/angular/angular.svg)
@@ -25,7 +25,7 @@ Enumera las características principales del proyecto.
 ### Backend
 - Node.js ![Node.js](https://nodejs.org/static/images/logo.svg)
 - Express ![Express](https://expressjs.com/images/express-facebook-share.png)
-```
+
 
 Nuestro Equipo
 
