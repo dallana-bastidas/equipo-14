@@ -36,7 +36,7 @@ Controla y administra tu inventario de manera eficiente.
 - Tailwind CSS ![Tailwind](https://tailwindcss.com/img/tailwindcss-logo.svg)
 
 ### Backend
-- Node.js ![Node.js]([https://nodejs.org/static/images/logo.svg](https://img.icons8.com/?size=100&id=54087&format=png&color=000000))
+- Node.js ![Node.js](https://w1.pngwing.com/pngs/885/534/png-transparent-green-grass-nodejs-javascript-react-mean-angularjs-logo-symbol.png)
 - Express ![Express](https://expressjs.com/images/express-facebook-share.png)
 
 ---
