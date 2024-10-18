@@ -40,11 +40,11 @@ Controla y administra tu inventario de manera eficiente.
 <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS" width="200" height="200">
 
 ### Backend
-
 - Node.js 
-<img src="https://nodejs.org/static/images/logo.svg" alt="Node.js" width="200" height="200">
+<img src="https://nodejs.org/static/images/logo.svg" alt="Node.js" width="50" height="50">
 - Express 
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="Express" width="200" height="200" >
+<img src="https://miro.medium.com/max/400/1*zk-3g0zy0u54laCU4jwxmw.png" alt="Express" width="50" height="50">
+
  
 ### Base de Datos
 - MongoDB 
