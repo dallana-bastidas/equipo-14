@@ -35,20 +35,20 @@ Controla y administra tu inventario de manera eficiente.
 ### Frontend
 
 - Angular 
-<img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular" width="200" height="200">
+<img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular" width="100" height="100">
 - Tailwind CSS 
-<img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS" width="200" height="200">
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS" width="100" height="100">
 
 ### Backend
 - Node.js 
-<img src="https://nodejs.org/static/images/logo.svg" alt="Node.js" width="50" height="50">
+<img src="https://nodejs.org/static/images/logo.svg" alt="Node.js" width="100" height="100">
 - Express 
-<img src="https://miro.medium.com/max/400/1*zk-3g0zy0u54laCU4jwxmw.png" alt="Express" width="50" height="50">
+<img src="https://miro.medium.com/max/400/1*zk-3g0zy0u54laCU4jwxmw.png" alt="Express" width="100" height="100">
 
  
 ### Base de Datos
 - MongoDB 
-<img src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg" alt="MongoDB" width="200" height="200">
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg" alt="MongoDB" width="100" height="100">
 
 ---
 
