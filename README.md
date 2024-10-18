@@ -48,7 +48,7 @@ Controla y administra tu inventario de manera eficiente.
  
 ### Base de Datos
 - MongoDB 
-<img src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg" alt="MongoDB" width="50" height="50">
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg" alt="MongoDB" width="100" height="100">
 
 ---
 
