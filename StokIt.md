@@ -1,7 +1,6 @@
 # Stock It
 
 ## Descripción
-**Stock It** 
 Es una plataforma integral de gestión de inventarios diseñada para facilitar a los usuarios la carga y administración de su inventario de productos, con un enfoque especial en la industria de la moda. Los usuarios pueden especificar detalles como tallas, precios de los productos, nombres de los proveedores y precios de los proveedores.
 
 El inventario se muestra en una lista organizada y se publica en una página de destino (landing page) donde los clientes potenciales pueden explorar el catálogo de productos. Además, la plataforma integra un chat de WhatsApp, permitiendo que los usuarios se comuniquen fácilmente para realizar compras del catálogo.
