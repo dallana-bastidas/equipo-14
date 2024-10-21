@@ -4,7 +4,8 @@
   "description": "software facturacion",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ."
+    "dev": "nodemon .",
+    "star": "node index.js"
   },
   "author": "andres currea",
   "license": "ISC",
