@@ -29,7 +29,7 @@ const app = express();
 conectarDb();
 
 app.use(cors({
-	origin: 'https://equipo-14-api.vercel.app/api'
+	origin: 'https://equipo14-stockit.netlify.app/'
 }));
 app.use(express.json());
 
