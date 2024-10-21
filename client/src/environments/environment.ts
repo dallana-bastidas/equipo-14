@@ -1,4 +1,4 @@
 export const environment = {
-    urlApi: 'http://localhost:5200/api',
-    socketUrlApi: 'http://localhost:5200/'
+    urlApi: 'https://equipo-14.onrender.com/api',
+    socketUrlApi: 'https://equipo-14.onrender.com/'
 };
