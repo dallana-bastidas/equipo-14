@@ -29,7 +29,7 @@ const app = express();
 conectarDb();
 
 app.use(cors({
-	origin: 'equipo-14-client.vercel.app'
+	origin: 'equipo-14.vercel.app'
 }));
 app.use(express.json());
 
