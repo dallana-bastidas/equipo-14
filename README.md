@@ -31,6 +31,10 @@ Controla y administra tu inventario de manera eficiente.
 
 ## Tecnologías Utilizadas
 
+### Deploy
+- Frontend: <link src"https://equipo14-stockit.netlify.app/">
+- Backend:  <link src"http://equipo-14-api.vercel.app">
+
 ### Frontend
 
 - Angular 
