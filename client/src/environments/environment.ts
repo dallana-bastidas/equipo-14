@@ -1,4 +1,4 @@
 export const environment = {
-    urlApi: 'http://localhost:5200/api',
-    socketUrlApi: 'http://localhost:5200/'
+    production: false,
+    urlApi: 'https://equipo-14-api.vercel.app/api'
 };

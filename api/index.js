@@ -28,7 +28,9 @@ const app = express();
 // Conectar a la base de datos
 conectarDb();
 
-app.use(cors());
+app.use(cors({
+	origin: 'https://equipo-14-api.vercel.app/api'
+}));
 app.use(express.json());
 
 app.use('/api', require('./routes/rutas_aplicacion'));
