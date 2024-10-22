@@ -1,3 +1,4 @@
+<div align="center">
 # 🎉 Equipor 14 - Stock It 🎉
 
 ## 📋 Notas sobre el repositorio 📋
@@ -7,3 +8,4 @@
 🙏 Agradecemos su comprensión y apoyo mientras seguimos adelante con el desarrollo. 🙏
 
 🎊 ¡Estamos emocionados por lo que viene! 🎊
+</div>
