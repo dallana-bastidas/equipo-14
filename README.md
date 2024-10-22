@@ -28,7 +28,7 @@ Controla y administra tu inventario de manera eficiente.
     Los clientes pueden contactar fácilmente a través del chat de WhatsApp integrado para realizar preguntas o iniciar compras, mejorando la interacción y las ventas.
 
 ---
-## Deploy (En netlify funcionan front y back juntos)
+## Deploy
 
 [Frontend Deploy](https://stockitdev.netlify.app)
 [Backend Deploy](https://equipo-14.onrender.com)
