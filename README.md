@@ -27,6 +27,7 @@ Controla y administra tu inventario de manera eficiente.
 ## Deploy
 
 [Frontend Deploy](https://stockitdev.netlify.app)
+
 [Backend Deploy](https://equipo-14.onrender.com)
  
 ## Tecnologías Utilizadas
@@ -55,7 +56,7 @@ Controla y administra tu inventario de manera eficiente.
 - **Project Manager**: 📋 Joel Angel Ocaño Oré
 - **Community Manager**: 📲 Rita Cornejo
 - **Diseñadores UX/UI**: 🎨 Matias Sticca, Silvana Maldonado, Manuel Lo Grasso
-- **Backend y Frontend **: 👨🏻‍💻 Dallana Bastidas, Juan Diego Hurtado Bastidas
+- **Backend y Frontend**: 👨🏻‍💻 Dallana Bastidas, Juan Diego Hurtado Bastidas
 - **QA**: ✅ Matias Caceres Paz, Nicolas Demis Martin
 
 ---
